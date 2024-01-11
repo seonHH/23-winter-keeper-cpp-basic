@@ -44,7 +44,7 @@ int main( void )
     
    <br>
 
-   ![Process of compile](./img/processOfComplie.png)
+   ![Process of compile](../images/processOfComplie.png)
     *Process of compile*
    <br>
     
