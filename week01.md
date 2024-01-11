@@ -55,7 +55,7 @@ int main( void )
    **#** 문자로 시작하는 구문을 **지시자( directive )** 라고 하며 전처리기에 전달할 사항을 표현합니다. `#include`위 코드의 지시자는 `<iostream>`헤더 파일에 있는 내용을 현재 파일에서 사용할 수 있게 모두 가져오도록 전처리기에 지시합니다. 헤더 파일은 주로 나중에 소스 파일에서 구현할 함수를 선언하는 용도로 사용됩니다. 이러한 함수 **선언부( declaration )** 는 함수의 호출 방식, 매개변수의 개수와 타입, 리턴 타입 등만 컴파일러에 알려주고, 그 함수가 실제로 수행할 동작은 **구현부( definition )** 에 작성합니다.
 <br>
 
-    **\<iostream>** 헤더 파일엔 C++에서 제공하는 입력 및 출력 메커니즘이 선언되어 있습니다. 자세한 내용은 [C++ iostream](https://learn.microsoft.com/ko-kr/cpp/standard-library/iostream?view=msvc-170 "C++ iostream") 를 확인해주세요!
+   **\<iostream>** 헤더 파일엔 C++에서 제공하는 입력 및 출력 메커니즘이 선언되어 있습니다. 자세한 내용은 [C++ iostream](https://learn.microsoft.com/ko-kr/cpp/standard-library/iostream?view=msvc-170 "C++ iostream") 를 확인해주세요!
 <br>
 
    ##### main( ) 함수
@@ -70,9 +70,11 @@ int main( void )
 <br>
 
    ##### I/O 스트림
+
    ```cpp
-    std::cout << "Hello World!" << std::endl;
+   std::cout << "Hello World!" << std::endl;
    ``` 
+
    추 후 자세히 다루지만, 입력과 출력에 대한 기본 원리는 간단합니다. 컨베이어 벨트를 생각하시면 쉬운데요! 성격에 맞는 컨베이어 벨트에 데이터를 올려두기만 하면 그대로 출력됩니다.
    예를 들어 **`std::cout`** 이라는 컨베이어 벨트는 **사용자 콘솔( Standard output )** 에 출력합니다. _( 다른 예시로 `std::cerr`컨베이어 벨트는 에러 콘솔에 출력합니다. )_
    <br>
@@ -81,7 +83,7 @@ int main( void )
 	std::cout << "I slept " << 8 << "hours" << std::endl;
    ``` 
 
-   데이터를 컨베이어 벨트에 올리는 작업은 **<<** 연산자로 표현합니다. 위 코드와 같이 다양한 타입의 데이터를 출력 스트림으로 보낼수도 있습니다.
+	데이터를 컨베이어 벨트에 올리는 작업은 **<<** 연산자로 표현합니다. 위 코드와 같이 다양한 타입의 데이터를 출력 스트림으로 보낼수도 있습니다.
    **`std::endl`** 은 문장이 끝났다는 것을 의미합니다. 출력 스트림에서 **`std::endl`** 이 나타나면 지금까지 전달한 내용을 모두 출력하고 다음 줄로 넘어갑니다.
 
    <br>
