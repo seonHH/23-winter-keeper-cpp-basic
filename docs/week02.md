@@ -92,7 +92,7 @@ int add( int a, int b )
 ### 과제
 
 C++ 기본 출력과 함수와 관련 된 간단한 구현입니다.
-`week.hpp`에 `week02::drawStar()` 함수와 `week02::add()` 함수가 선언되어 있으며,`main.cpp` 에서 이를 `include`하고 정의합니다. 
+`week.hpp`에 `week02::drawStar()` 함수와 `week02::add()` 함수가 선언되어 있으며,`main.cpp` 에서 이를 `include`하고 정의합니다. 아래 과제 코드들을 확인해보시고, 코드를 완성해주세요.
 
 파일들은 `/assignment/week02`에도 있습니다.
 
