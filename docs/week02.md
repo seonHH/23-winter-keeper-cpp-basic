@@ -164,7 +164,9 @@ int main()
 	return 0;
 }
 ```
-
+<p align="center">
+<img src="../images/week02_assignment.png" width="100%" height="100%" title="what??"><br>출력 예시</img>
+</p>
 
 </div>
 </details>
@@ -175,5 +177,5 @@ int main()
 <br>
 
 <p align="center">
-<img src="../images/cheerup_moon.jpeg" width="60%" height="70%" title="what??"></img>
+<img src="../images/cheerup_moon.jpeg" width="60%" height="70%" title=cheerup"></img>
 </p>
