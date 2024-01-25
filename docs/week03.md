@@ -90,8 +90,8 @@ int i = 10;
 int* k = &i ;
 ```
 <p align="center">
-<img src="../images/stack_normal.PNG" width="40%" height="70%" title=stack_normal"></img>
-<img src="../images/stack_pointer.PNG" width="40%" height="70%" title=stack_pointer"></img>
+<img src="../images/stack_normal.png" width="40%" height="70%" title=stack_normal"></img>
+<img src="../images/stack_pointer.png" width="40%" height="70%" title=stack_pointer"></img>
 </p>
 
 10이라는 값이 저장되어있는 주소값을 `0x900`이라고 가정한다면, 위와 같이 **포인터 변수인 k** 는 `0x900`이라는 값을 저장하게 됩니다.
@@ -103,8 +103,8 @@ int a = 30;
 int& b = a ;
 ```
 <p align="center">
-<img src="../images/stack_normal_ref.PNG" width="41%" height="70%" title=stack_normal"></img>
-<img src="../images/stack_ref.PNG" width="40%" height="70%" title=stack_ref"></img>
+<img src="../images/stack_normal_ref.png" width="41%" height="70%" title=stack_normal"></img>
+<img src="../images/stack_ref.png" width="40%" height="70%" title=stack_ref"></img>
 </p>
 
 따로 공간이 할당 되지않고, 해당 주소 영역을 부르는 또 다른 이름이 생기게 됩니다.
