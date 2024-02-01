@@ -176,9 +176,12 @@ int& b = a ;
 #### 함수에서의 참조자 사용
 
 ```cpp
-int add( int& a , int& b )
+int& add( int& a , int& b )
 {
-    return a + b ;
+    int sum = a + b;
+    // int& ret_val = sum;
+
+    return sum ;
 }
 ```
 
