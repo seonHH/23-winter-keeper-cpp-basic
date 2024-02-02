@@ -197,10 +197,11 @@ Human two = one ;
   + (`m_name`, `m_hp`, `m_power`)를 매개변수로 받는 생성자.
 
 ##### 주의해야 할 점
++ 멤버 함수들은 `public`, 멤버 변수들은 `private` 으로 구현해 주세요.
 + `GetInfo` 는 객체 생성 없이 실행이 가능한 독립적인 함수입니다. 
 
 실행결과는 아래와 같습니다.  
-검사는 다음 스터디 시간에 하겠습니다. 궁금한거 있으면 뭐든지 물어봐주세요!
+검사는 다음 스터디 시간에 하겠습니다. 궁금한 거 있으면 뭐든지 물어봐 주세요!
 
 <p align="center">
 <img src="../images/assignment04.png" width="100%" height="100%" title="assignment04"></img>
