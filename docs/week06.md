@@ -278,6 +278,13 @@ int main() {
 
 # 과제 
 
+이번 과제는 사용자로부터 정보를 입력받아 객체를 생성하고, 저장하는 과제입니다.   
+저장된 객체에 맞는 `Action`도 수행해봅시다!   
+
+   
+<details>
+<summary>week06.hpp 설명</summary>
+<div markdown="1">
 `week06.hpp`에서는 `week06` 네임스페이스 안에 `Animal`, `Dog`, `Cat` 클래스를 생성하게 됩니다.     
 각 클래스는 특정한 멤버 변수와 멤버 함수를 가지고 있습니다.    
 
@@ -316,6 +323,9 @@ int main() {
 - `Cat()`: `Cat` 클래스의 생성자입니다. 매개변수로 문자열과 점프 높이용 정수 하나를 받습니다.   
 - `void Action()`: 고양이의 행동을 출력하는 함수입니다. `Animal` 클래스의 `Action` 함수를 재정의(오버라이드)합니다.   
 
+</div>
+</details>
+
 ### (1) Animal, Dog, Cat 클래스의 멤버 함수 정의
 이 부분에서는 각 클래스의 `생성자`, `소멸자`, 그리고 필요한 `멤버 함수`들을 정의합니다.   
 `Animal` 클래스는 `GetName` 함수를 추가로 정의하고, `Dog` 와 `Cat` 클래스는 `Action` 함수를 오버라이드하여 정의합니다.
@@ -332,3 +342,7 @@ int main() {
 ### (5) vector을 순회하며 각 객체의 소멸자 호출
 이 부분에서는 `AnimalList` 벡터를 순회하며 저장된 각 `Animal` 객체를 삭제합니다. 이 때 `delete` 연산자를 사용하여 동적으로 할당된 메모리를 해제합니다.
 
+<p align="center">
+<img src = "../images/assignment06.png" width="100%" height="100%" title="robot"></img>
+<br>실행 화면
+</p>
