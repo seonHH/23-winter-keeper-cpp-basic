@@ -69,12 +69,12 @@ public:
 
 ---
 
-<!-- <p align="center">
+<p align="center">
 <img src = "../images/vector.png" width="80%" height="80%" title="robot"></img>
 <br>벡터의 구조
-</p> -->
+</p>
 
-![vetor의 구조](../images/vector.png)
+<!-- ![vetor의 구조](../images/vector.png) -->
 
 ---
 
@@ -263,11 +263,11 @@ class MyClass
 ---
 
 
-![출력 결과](../images/operator02.png)
-<!-- <p align="center">
+<!-- ![출력 결과](../images/operator02.png) -->
+<p align="center">
 <img src = "../images/operator02.png" width="80%" height="80%" title="friends"></img>
 <br>출력결과
-</p> -->
+</p>
 
 ---
 
@@ -333,7 +333,72 @@ int main() {
 `MyClass`의 `friends`로 선언 된 `void revealSecret( MyClass& mc )`함수는 `MyClass`의 `private`, `protected`에 접근할 수 있습니다.
 
 ---
+### auto 키워드 보충
 
-<!-- ## 과제
+`auto` 키워드 설명 드릴때 런타임에 자료형을 변경할 수 있다고 설명드린 것 같은데 **완전히 잘못된 내용입니다...**   
+<br>
 
-1. `<<`, `>>` 오버로딩 -->
+`auto`는 컴파일 과정에서 추론 된 자료형으로 **치환** 되므로 런타임 과정에서 변경되는게 아닙니다.  
+
+```cpp
+auto a = 1 ;
+```
+위 코드가 컴파일러에 의해
+```cpp
+int a = 1 ;
+```
+로 변경되는 것 입니다.
+
+따라서 질문주신
+
+```cpp
+auto a = 1 ;
+a = "string" ;
+```
+내용은 아래 코드와 동일한 코드로 취급되므로,
+```cpp
+int a = 1 ;
+a = "string" ;
+```
+은 타입 변환 오류가 발생하게 됩니다. 부족한 준비로 혼선을 드려 죄송합니다 😭
+
+## 과제
+
+이번 과제로 여러가지 `연산자 오버로딩`을 해봅시다.   
+
+### ( 1 ) 생성자 정의
+
+정수와 영어로 이뤄진 문자열을 매개변수로 받아 `Human` 객체를 생성하는 생성자를 구현해주세요.   
+
+### ( 2 ) + 연산자 오버로딩
+
+Human 객체끼리 + 연산을 하면 다음과 같이 동작합니다.    
+- `age` 끼리는 **단순 정수 더하기 연산**을 합니다.  
+- `name`은 첫자리 비교하여 **알파벳 순서가 빠른** 이름을 찾습니다. *( adam, jack 비교시 adam , 대소문자 구분 x )*    
+   
+이후 두 객체의 `m_age`를 더한 값, 알파벳 순서가 빠른 이름 `t_name`을 가진 객체를 반환합니다.
+
+두 `age`, `name`
+
+### ( 3 ) << 연산자 오버로딩
+
+`<<` 연산자를 오버로딩하여 아래 코드만으로 `Human` 객체들의 `m_age`, `m_name`값을 출력할 수 있게 구현해주세요.
+
+```cpp
+std::cout << a << std::endl ;
+```
+
+### ( 4 ) >> 연산자 오버로딩
+
+`>>` 연산자를 오버로딩하여 아래 코드만으로 `Human` 객체인 들의 `m_age`, `m_name`의 값을 초기화할 수 있게 구현해주세요.   
+
+```cpp
+std::cin >> a ;
+```
+
+아래 출력 결과가 나오도록 구현 해주세요. `main` 함수는 수정하지 않으셔도 됩니다. 
+
+<p align="center">
+<img src = "../images/assignment07.png" width="80%" height="80%" title="assignment07"></img>
+<br>출력 결과
+</p>
